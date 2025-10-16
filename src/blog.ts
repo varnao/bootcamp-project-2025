@@ -10,10 +10,10 @@ type Blog = {
 const blogs: Blog[] = [
   {
     title: "Why I Love Frontend Development",
-    date: "October 15, 2025",
+    date: "October 14, 2025",
     description:
       "Discussing why frontend development is my favorite part of programming, from bringing designs to life to creating experiences that feel intuitive and engaging.",
-    image: "./images/frontend.jpeg",
+    image: ".src/frontend.jpeg",
     imageAlt: "photo of a computer screen",
     slug: "",
   },
@@ -22,7 +22,7 @@ const blogs: Blog[] = [
     date: "October 15, 2025",
     description:
       "A look into my involvement with WISH at Cal Poly and how the club has strengthened my technical skills, leadership, and sense of community in tech.",
-    image: "./images/wishlogo.png",
+    image: ".src/wishlogo.png",
     imageAlt: "cal poly wish club logo",
     slug: "",
   },

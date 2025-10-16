@@ -26,6 +26,7 @@ if (blogContainer) {
     image.alt = blog.imageAlt;
     var title = document.createElement("h1");
     title.textContent = blog.title;
+    title.style.fontFamily = "Georgia";
     var date = document.createElement("p");
     date.textContent = blog.date;
     var description = document.createElement("p");
