@@ -1,42 +1,43 @@
 var blogs = [
-  {
-    title: "Why I Love Frontend Development",
-    date: "October 14, 2025",
-    description:
-      "Discussing why frontend development is my favorite part of programming, from bringing designs to life to creating experiences that feel intuitive and engaging.",
-    image: "./frontend.jpeg",
-    imageAlt: "photo of a computer screen",
-    slug: "",
-  },
-  {
-    title: "My Involvement In WISH at Cal Poly",
-    date: "October 15, 2025",
-    description:
-      "A look into my involvement with WISH at Cal Poly and how the club has strengthened my technical skills, leadership, and sense of community in tech.",
-    image: "./wishclublogo.png",
-    imageAlt: "cal poly wish club logo",
-    slug: "",
-  },
+    {
+        title: "Why I Love Frontend Development",
+        date: "October 14, 2025",
+        description: "Discussing why frontend development is my favorite part of programming, from bringing designs to life to creating experiences that feel intuitive and engaging.",
+        image: "./frontend.jpeg",
+        imageAlt: "photo of a computer screen",
+        slug: "why-i-love-frontend-development",
+    },
+    {
+        title: "My Involvement In WISH at Cal Poly",
+        date: "October 15, 2025",
+        description: "A look into my involvement with WISH at Cal Poly and how the club has strengthened my technical skills, leadership, and sense of community in tech.",
+        image: "./wishclublogo.png",
+        imageAlt: "cal poly wish club logo",
+        slug: "my-involvement-in-wish",
+    },
 ];
 var blogContainer = document.getElementById("blog-container");
 if (blogContainer) {
-  blogs.forEach(function (blog) {
-    var image = document.createElement("img");
-    image.src = blog.image;
-    image.alt = blog.imageAlt;
-    var title = document.createElement("h1");
-    title.textContent = blog.title;
-    title.style.fontFamily = "Georgia";
-    var date = document.createElement("p");
-    date.textContent = blog.date;
-    var description = document.createElement("p");
-    description.textContent = blog.description;
-    var blogCard = document.createElement("div");
-    blogCard.classList.add("blog-card");
-    blogCard.appendChild(image);
-    blogCard.appendChild(title);
-    blogCard.appendChild(date);
-    blogCard.appendChild(description);
-    blogContainer.appendChild(blogCard);
-  });
+    blogs.forEach(function (blog) {
+        var image = document.createElement("img");
+        image.src = blog.image;
+        image.alt = blog.imageAlt;
+        var title = document.createElement("h1");
+        title.textContent = blog.title;
+        var date = document.createElement("p");
+        date.textContent = blog.date;
+        var description = document.createElement("p");
+        description.textContent = blog.description;
+        var link = document.createElement("a");
+        link.href = "blogs/".concat(blog.slug, ".html");
+        link.classList.add("blog-link");
+        var blogCard = document.createElement("div");
+        blogCard.classList.add("blog-card");
+        blogCard.appendChild(image);
+        blogCard.appendChild(title);
+        blogCard.appendChild(date);
+        blogCard.appendChild(description);
+        link.appendChild(blogCard);
+        blogContainer.appendChild(link);
+    });
 }

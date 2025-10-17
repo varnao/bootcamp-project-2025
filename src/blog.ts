@@ -15,7 +15,7 @@ const blogs: Blog[] = [
       "Discussing why frontend development is my favorite part of programming, from bringing designs to life to creating experiences that feel intuitive and engaging.",
     image: "./frontend.jpeg",
     imageAlt: "photo of a computer screen",
-    slug: "",
+    slug: "why-i-love-frontend-development",
   },
   {
     title: "My Involvement In WISH at Cal Poly",
@@ -24,7 +24,7 @@ const blogs: Blog[] = [
       "A look into my involvement with WISH at Cal Poly and how the club has strengthened my technical skills, leadership, and sense of community in tech.",
     image: "./wishclublogo.png",
     imageAlt: "cal poly wish club logo",
-    slug: "",
+    slug: "my-involvement-in-wish",
   },
 ];
 
@@ -45,6 +45,10 @@ if (blogContainer) {
     const description = document.createElement("p");
     description.textContent = blog.description;
 
+    const link = document.createElement("a");
+    link.href = `blogs/${blog.slug}.html`;
+    link.classList.add("blog-link");
+
     const blogCard = document.createElement("div");
     blogCard.classList.add("blog-card");
 
@@ -52,6 +56,7 @@ if (blogContainer) {
     blogCard.appendChild(title);
     blogCard.appendChild(date);
     blogCard.appendChild(description);
-    blogContainer.appendChild(blogCard);
+    link.appendChild(blogCard);
+    blogContainer.appendChild(link);
   });
 }
