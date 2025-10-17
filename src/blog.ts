@@ -1,3 +1,5 @@
+// definign the shape of a blog object
+
 type Blog = {
   title: string;
   date: string;
@@ -7,6 +9,7 @@ type Blog = {
   slug: string;
 };
 
+// list of blog posts to display on the blog page
 const blogs: Blog[] = [
   {
     title: "Why I Love Frontend Development",
@@ -28,10 +31,12 @@ const blogs: Blog[] = [
   },
 ];
 
+// getting contanter element where all blog cards will be added
 const blogContainer = document.getElementById("blog-container");
 
 if (blogContainer) {
   blogs.forEach((blog) => {
+    // creating elements for the blog card and populate with blog data
     const image = document.createElement("img");
     image.src = blog.image;
     image.alt = blog.imageAlt;
@@ -45,10 +50,12 @@ if (blogContainer) {
     const description = document.createElement("p");
     description.textContent = blog.description;
 
+    // creating a link element to wrap the blog card and point to the individual blog page
     const link = document.createElement("a");
     link.href = `blogs/${blog.slug}.html`;
     link.classList.add("blog-link");
 
+    // creating a container div for blog card and add all elements to it
     const blogCard = document.createElement("div");
     blogCard.classList.add("blog-card");
 
@@ -56,6 +63,8 @@ if (blogContainer) {
     blogCard.appendChild(title);
     blogCard.appendChild(date);
     blogCard.appendChild(description);
+
+    // wrap the blog card in the link and add it to the main containter
     link.appendChild(blogCard);
     blogContainer.appendChild(link);
   });
