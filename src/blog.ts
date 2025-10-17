@@ -13,7 +13,7 @@ const blogs: Blog[] = [
     date: "October 14, 2025",
     description:
       "Discussing why frontend development is my favorite part of programming, from bringing designs to life to creating experiences that feel intuitive and engaging.",
-    image: ".src/frontend.jpeg",
+    image: "./frontend.jpeg",
     imageAlt: "photo of a computer screen",
     slug: "",
   },
@@ -22,7 +22,7 @@ const blogs: Blog[] = [
     date: "October 15, 2025",
     description:
       "A look into my involvement with WISH at Cal Poly and how the club has strengthened my technical skills, leadership, and sense of community in tech.",
-    image: ".src/wishlogo.png",
+    image: "./wishclublogo.png",
     imageAlt: "cal poly wish club logo",
     slug: "",
   },
