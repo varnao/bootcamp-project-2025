@@ -254,11 +254,19 @@ main {
 .resume h2 {
   font-family: Georgia;
   color: var(--cg-white);
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 .resume h3 {
   font-family: Georgia;
   color: var(--cg-white);
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-bottom: 5px;
 }
 
 .resume ul li {
