@@ -1,0 +1,23 @@
+/* navbar.module.css */
+.navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: white;
+  padding: 0 20px;
+}
+
+.navList {
+  display: flex;
+  list-style: none;
+  gap: 12px;
+}
+
+.logo {
+  font-family: Georgia;
+  font-weight: bold;
+}
