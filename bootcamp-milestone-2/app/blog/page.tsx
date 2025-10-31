@@ -14,6 +14,8 @@ export default function BlogPage() {
           gap: "30px",
         }}
       >
+        {/* mapping through the blogs array to create blogPreview component for each blog */}
+        {/* {...blog} spreads all blog properties as props to BlogPreview */}
         {blogs.map((blog) => (
           <BlogPreview key={blog.slug} {...blog} />
         ))}

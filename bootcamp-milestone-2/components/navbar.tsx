@@ -2,6 +2,8 @@ import React from "react";
 import style from "./navbar.module.css";
 import Link from "next/link";
 
+// navigation bar component that will show up on every page
+// links to all main pages
 export default function Navbar() {
   return (
     <header className={style.navbar}>
