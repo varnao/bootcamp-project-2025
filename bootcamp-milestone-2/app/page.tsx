@@ -21,8 +21,8 @@ export default function Home() {
           <Image
             src="/slo.jpeg"
             alt="landscape picture of cal poly campus"
-            width={800} // Made even bigger
-            height={600} // Made even bigger
+            width={800} 
+            height={600} 
           />
         </div>
         <div className="about-text">
