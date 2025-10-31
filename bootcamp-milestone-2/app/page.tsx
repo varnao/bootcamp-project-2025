@@ -2,15 +2,27 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main>
-      <h1 className="page-title">Valeria Arnao's Website</h1>
-      <div className="about">
+    <main
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        minHeight: "calc(100vh - 150px)",
+        padding: "40px 20px",
+      }}
+    >
+      <h1
+        className="page-title"
+        style={{ marginTop: "20px", marginBottom: "auto" }}
+      >
+        Valeria Arnao's Website
+      </h1>
+      <div className="about" style={{ marginBottom: "auto" }}>
         <div className="about-image">
           <Image
             src="/slo.jpeg"
             alt="landscape picture of cal poly campus"
-            width={750}
-            height={450}
+            width={800} // Made even bigger
+            height={600} // Made even bigger
           />
         </div>
         <div className="about-text">

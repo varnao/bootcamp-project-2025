@@ -6,6 +6,9 @@
   padding: 20px;
   text-align: center;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-decoration: none;
+  color: inherit;
+  display: block;
 }
 
 .blog-card:hover {

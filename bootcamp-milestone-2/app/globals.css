@@ -97,7 +97,7 @@ main {
   display: flex;
   justify-content: center;
   font-size: 40px;
-  font-family: Georgia;
+  font-family: Georgia, serif;
   color: var(--cg-white);
 }
 
@@ -200,9 +200,10 @@ main {
 }
 
 .about-image img {
-  max-width: 300px;
+  max-width: 600px;
+  width: 100%;
+  height: auto;
   border-radius: 3px;
-  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
 }
 
 .about-text {
@@ -312,6 +313,7 @@ textarea {
   font-size: 16px;
   resize: none;
   font-family: Georgia;
+  background-color: white;
 }
 
 form {
