@@ -286,7 +286,7 @@ main {
   border: none;
   height: 1px;
   background-color: var(--cg-white);
-  margin: 20px 0; 
+  margin: 20px 0;
   width: 80%;
   margin-left: auto;
   margin-right: auto;
@@ -446,4 +446,68 @@ input[type="submit"] {
   font-size: 18px;
   line-height: 1.8;
   text-align: justify;
+}
+
+.page-wrapper {
+  padding: 40px;
+  max-width: 800px;
+  margin: auto;
+  background-color: white;
+}
+
+.blog-article {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.blog-title {
+  font-size: 2.2rem;
+  font-family: Georgia, serif;
+  text-align: center;
+}
+
+.blog-date {
+  color: #777;
+  font-style: italic;
+  margin-bottom: 10px;
+  font-family: Georgia;
+}
+
+.blog-image {
+  width: 100%;
+  border-radius: 10px;
+  margin: 20px auto;
+  display: block;
+}
+
+.blog-content {
+  font-size: 1.1rem;
+  line-height: 1.65;
+  color: var(--cg-black);
+  white-space: pre-line; 
+  font-size: 15px;
+  font-family: Georgia;
+}
+
+.comment-section {
+  margin-top: 40px;
+}
+
+.comment-section h2 {
+  font-family: Georgia, serif;
+  font-size: 15px;
+  text-align: center;
+  color: var(--cg-black);
+}
+
+.comment-section p,
+.comment-section .comment {
+  font-family: Georgia, serif;
+  font-size: 15px;
+  color: var(--cg-black);
+}
+
+.comment-section > form {
+  margin-top: 25px;
 }

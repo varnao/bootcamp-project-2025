@@ -1,0 +1,3 @@
+{
+  "extends": "../../bootcamp-milestone-2/tsconfig.json"
+}
